@@ -3,14 +3,14 @@
 
 #TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
 
-- Gekende bugs - client & server
-- links in onderdeel "information" werken niet
-- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op
+- Gekende bugs - client & server.
+- links in onderdeel "information" werken niet.
+- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
 - Client: is er een bepaalde resolutie waarop we jullie project best bekijken?
 - Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
-- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen
-- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI
-- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer
+- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
+- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
+- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer.
 
 
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14)
