@@ -71,7 +71,7 @@ __Wireframes via adobe XD:__
 
 ---
 ##Uitzonderlijke features
-De map is een uitzonderlijke feature omdat we gebruik maken van een Google API. Vervolgens kunnen we zowel zoeken als filteren op deze data. Onze map maakt ook gebruik van marker clustering. Dit wil zeggen dat als markers overlappen dat ze samen worden gemengd in 1 marker. Elke marker is ook voorzien van een pop-up die meer informatie toont zoals de locatie, het type gewas en ratio. Hoe hoger de ratio, hoe hoger de overlevingskans voor dat specifiek gewas. Om af te sluiten worden het aantal markers getoond op basis van het abonnementstype. Hoe duurder het abonnement, hoe meer toegang tot data. 
+De map is een uitzonderlijke feature omdat we gebruik maken van een Google API. Vervolgens kunnen we zowel zoeken als filteren op deze data. Onze map maakt ook gebruik van marker clustering. Dit wil zeggen dat als markers overlappen dat ze samen worden gemengd in 1 marker. Elke marker is ook voorzien van een pop-up die meer informatie toont zoals de locatie, het type gewas en ratio. Hoe hoger de ratio, hoe beter de grond voor dat specifiek gewas. Om af te sluiten worden het aantal markers getoond op basis van het abonnementstype. Hoe duurder het abonnement, hoe meer toegang tot data. 
 <br><br>
 
 ---
