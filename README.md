@@ -208,7 +208,34 @@ In de database worden er test waarden voorzien bij het opstarten van de server. 
 
 ## OpenAPI
 
-[Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml)
+<!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
+
+De endpoints van onze server kan je terug vinden in onze
+[OpenAPI](src/main/resources/openapi-group-14.yaml) file.
+
+Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind je hieronder.
+
+* Inloggen
+
+* Gereedschappen uitlenen
+
+* Gereedschappen toevoegen aan favorieten
+
+* Gereedschappen zoeken op naam
+
+* Bestelgeschiedenis opvragen van persoon
+
+* In bestelgeschiedenis zoeken op naam bij bepaald een persoon
+
+* zaadjes toevoegen aan favorieten
+
+* zaadjes verwijderen uit favorieten
+
+* zaadjes toevoegen aan winkelmandje
+
+* zaadjes verwijderen uit winkelmandje
+
+</br>
 
 
 ## Gekende Bugs 
