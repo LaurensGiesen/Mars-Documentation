@@ -1,6 +1,7 @@
 # Mars Agriculture and Research Service (groep 14)
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
+
 # TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
 
 - Gekende bugs - client & server.
@@ -71,7 +72,8 @@ autonome samenleving te creëren op vlak van voedsel.
 >   - Interessante informatie over de producten die beschikbaar zijn op de map.
 >   - Een order history waarbij je op die manier ook kan nakijken hoeveel je al betaald hebt in totaal, of ook gemakkelijk iets opnieuw kan bestellen.
 
-<br><br>
+<br>
+
 ---
 
 ## Flowchart
@@ -93,16 +95,24 @@ __Wireframes via adobe XD:__
 
 ---
 
+## Uitzonderlijke features
+Uitzonderlijke feature(s) die jullie onderscheiden van de anderen / waar jullie trots op zijn
+
 ## Geïmplementeerde technische vereisten
 ### Map
+Het hoofdcomponent van onze app bestaat uit de interactieve Mars map. Deze werd geïmplementeerd o.b.v. google maps api. Aan de hand van een filter kunnen de gebruikers het gewenste gewas aanduiden waarna de markers zich aanpassen.
+
 ### Vue
+Aan de client side werd gebruik gemaakt van enkele vue componenten om herhalende code te vermijden. 
+
 ### CSS Animaties
+Als laatste vereiste werden enkele css animaties geïmplementeerd. 
 <br><br>
 
 ---
+##Uitzonderlijke features
+De map is een uitzonderlijke feature omdat we gebruik maken van een Google API. Vervolgens kunnen we zowel zoeken als filteren op deze data. Onze map maakt ook gebruik van marker clustering. Dit wil zeggen dat als markers overlappen dat ze samen worden gemengd in 1 marker. Elke marker is ook voorzien van een pop-up die meer informatie toont zoals de locatie, het type gewas en ratio. Hoe hoger de ratio, hoe beter de grond voor dat specifiek gewas. Om af te sluiten worden het aantal markers getoond op basis van het abonnementstype. Hoe duurder het abonnement, hoe meer toegang tot data. 
 
-## Uitzonderlijke features
-Uitzonderlijke feature(s) die jullie onderscheiden van de anderen / waar jullie trots op zijn
 <br><br>
 
 ---
@@ -191,26 +201,19 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 
 ### Database
 
-<!-- [Aanmaken van de database](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/databaseStructure.sql)
-
-[Toevoegen van gegevens aan de database ](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/populateDatabase.sql) -->
-
 
 De database is beschikbaar op localhost, op de hierboven ingestelde poort. bijvoorbeeld [localhost:9000](localhost:9000). De database wordt gestart bij het opstarten van de server. Zorg er dus voor dat uw server aanstaat als je de database wilt bereiken.
-
-</br>
+<br>
 
 Bij het opstarten van de server zullen de tables uit de database verwijderd en daarna opnieuw aangemaakt worden. Dit gebeurd via het script [databaseStructure.sql](src/main/resources/databaseStructure.sql)
-
-</br>
+<br>
 
 In de database worden er test waarden voorzien bij het opstarten van de server. Deze kan u aanpassen in de file [populateDatabase.sql](src/main/resources/populateDatabase.sql).
-
-
 
 ---
 
 ## OpenAPI
+
 
 <!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
 
@@ -227,27 +230,16 @@ De endpoints van onze server kan u terug vinden in onze
 Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind u hieronder.
 
 * Inloggen
-
 * Gereedschappen uitlenen
-
 * Gereedschappen toevoegen aan favorieten
-
 * Gereedschappen zoeken op naam
-
 * Bestelgeschiedenis opvragen van persoon
-
 * In bestelgeschiedenis zoeken op naam bij bepaald een persoon
-
 * zaadjes toevoegen aan favorieten
-
 * zaadjes verwijderen uit favorieten
-
 * zaadjes toevoegen aan winkelmandje
-
 * zaadjes verwijderen uit winkelmandje
-
-</br>
-
+<br>
 
 ## Gekende Bugs 
 
@@ -255,4 +247,4 @@ Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind u hieronder.
 
 * Veiligheidsaspect, er zijn enkele kwetsbaarheden in de website. Aangezien er momenteel nog geen authenticatie aanwezig is, zorgt dit voor veiligheidsproblemen. Het is dus mogelijk om producten te verwijderen/toe te voegen in iemand anders zijn favorieten of winkelmandje.
 
-* Search info op de marketplace werkt niet optimaal als je meerdere gewassen geselecteerd hebt en daarna één deselecteerd.
+* Search info op de marketplace werkt niet optimaal als je meerdere gewassen geselecteerd hebt en daarna één deselecteert.
