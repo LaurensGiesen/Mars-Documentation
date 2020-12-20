@@ -17,6 +17,8 @@
 
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14) [![License](https://img.shields.io/badge/License-OpenAPI%201.0-Green.svg)](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml)
 
+
+
 ![Website Home Page](./img/Home.png)
 <br></br>
 
@@ -41,29 +43,27 @@
   + [Informatie](#informatie)
   + [Installatie](#installatie)
   + [Configuratie](#configuratie)
+  + [Gradle](#gradle)
   + [Database](#database)
 * [OpenAPI]((#openAPI))
+* [Gekende bugs](#gekende-bugs)
 <br><br>
 ---
 ## Beschrijving
 
-Al snel werd het duidelijk dat we het probleem van voedselschaarste wilden
-aanpakken. Het zou zinloos zijn als je steeds moet wachten op de volgende levering
-voedsel van Aarde naar Mars. Met ons concept Mars Agricultural Research Service
-(verder afgekort als MARS) proberen we mensen samen te brengen om een
-autonome samenleving te creëren op vlak van voedsel.
+Al snel werd het duidelijk dat we het probleem van voedselschaarste wilden aanpakken. Het zou zinloos zijn als je steeds moet wachten op de volgende levering voedsel van Aarde naar Mars. Met ons concept Mars Agricultural Research Service (verder afgekort als MARS) proberen we mensen samen te brengen om een autonome samenleving te creëren op vlak van voedsel.
 <br><br>
 
 ---
 ## POC
 
 ### Onze POC bestaat uit:
->   - Een map waarbij elke klant locaties kan zien, gebaseerd op het type abonnement, waarbij er bij elke locatie interessante informatie staat.
->   - Een marketplace waar iedereen zijn producten op kan plaatsen en op deze manier een leuke interactie heeft met andere gebruikers van onze website. Bovendien kunnen ze hier ook wat winst op maken en er een centje mee bijverdienen.
->     <br>
->     In de marketplace kan je zowel favoriete producten toevoegen en verwijderen om later heel snel dezelfde producten te kunnen kopen, als producten toevoegen en verwijderen uit een winkelmandje met een gegeven aantal om deze dan effectief te kunnen kopen.
->   - Een onderdeel van het profiel is ook dat je kan zien welke producten je allemaal hebt toegevoegd aan de marketplace. Op deze pagina is er de functionaliteit om ze te verwijderen indien je ze toch niet wil verkopen.
->   - Een change subscription pagina. Het aanpassen van je subscription is iets wat ook heel belangrijk is op onze website. De subscription is de basis van wat er mogelijk is op de website. Met een premium subscription heb je namelijk veel meer voordelen dan een free subscription.
+>   - Een map waarbij elke klant locaties kan zien, gebaseerd op het type abonnement, waarbij bij elke locatie interessante informatie staat.
+>   - Een marketplace waar iedereen zijn producten op kan plaatsen, en op deze manier interactie heeft met andere gebruikers van onze website. Bovendien kunnen ze hier ook wat winst op maken en er een centje mee bijverdienen.
+><br>
+>     In de marketplace kan je favoriete producten toevoegen en verwijderen, om later snel dezelfde producten te kunnen kopen. Ook kan je producten toevoegen en verwijderen uit een winkelmandje met een gegeven aantal om deze dan effectief te kunnen kopen.
+>   - Een onderdeel van het profiel is ook dat je kan zien welke producten je allemaal hebt toegevoegd aan de marketplace. Op deze pagina is er de functionaliteit om ze te verwijderen als je ze toch niet wil verkopen.
+>   - Een change subscription pagina. Het aanpassen van je subscription is iets wat ook belangrijk is op onze website. De subscription is de basis van wat er mogelijk is op de website. Met een premium subscription heb je namelijk veel meer voordelen dan een free subscription.
 >     <br>
 >     De data van de user zelf en de huidige subscription kan ook steeds bekeken en aangepast worden.
 
@@ -80,7 +80,7 @@ autonome samenleving te creëren op vlak van voedsel.
 ### Flowchart van het afgeleverde project
 ![Flowchart](img/end%20flowchart.png)
 
-### Flowchart zoals opgesteld bij aanvang project
+### Flowchart zoals opgesteld bij het begin van het project
 ![Flowchart](img/flowchart.png)
 <br><br>
 ---
@@ -95,15 +95,12 @@ __Wireframes via adobe XD:__
 
 ---
 
-## Uitzonderlijke features
-Uitzonderlijke feature(s) die jullie onderscheiden van de anderen / waar jullie trots op zijn
-
 ## Geïmplementeerde technische vereisten
 ### Map
-Het hoofdcomponent van onze app bestaat uit de interactieve Mars map. Deze werd geïmplementeerd o.b.v. google maps api. Aan de hand van een filter kunnen de gebruikers het gewenste gewas aanduiden waarna de markers zich aanpassen.
+Het hoofdcomponent van onze app bestaat uit de interactieve Mars map. Deze werd geïmplementeerd o.b.v. Google Maps JS API. Aan de hand van een filter kunnen de gebruikers het gewenste gewas aanduiden waarna de markers zich aanpassen.
 
 ### Vue
-Aan de client side werd gebruik gemaakt van enkele vue componenten om herhalende code te vermijden. 
+Aan de client side werd gebruik gemaakt van enkele vue componenten om herhalende code te beperken. 
 
 ### CSS Animaties
 Als laatste vereiste werden enkele css animaties geïmplementeerd. 
@@ -111,9 +108,13 @@ Als laatste vereiste werden enkele css animaties geïmplementeerd.
 
 ---
 ##Uitzonderlijke features
-De map is een uitzonderlijke feature omdat we gebruik maken van een Google API. Vervolgens kunnen we zowel zoeken als filteren op deze data. Onze map maakt ook gebruik van marker clustering. Dit wil zeggen dat als markers overlappen dat ze samen worden gemengd in 1 marker. Elke marker is ook voorzien van een pop-up die meer informatie toont zoals de locatie, het type gewas en ratio. Hoe hoger de ratio, hoe beter de grond voor dat specifiek gewas. Om af te sluiten worden het aantal markers getoond op basis van het abonnementstype. Hoe duurder het abonnement, hoe meer toegang tot data. 
+Een aspect waar we trots op zijn is de map. We maken gebruiken van de Google Maps Javascript API waar we via een image map type [map tile set](https://www.openplanetary.org/opm/basemaps) van Mars hebben aan gekoppeld.
 
-<br><br>
+Aan die map hebben we een filter gekoppeld, zodat gebruikers vlot kunnen zoeken op de gewassen waarmee zij aan de slag willen. Onze map maakt ook gebruik van marker clustering. Bij het uitzoomen worden overlappende markers samengevoegd om de kaart netjes te houden. Elke marker is ook voorzien van een pop-up die meer informatie toont zoals de locatie, het type gewas en ratio. Hoe hoger de ratio, hoe beter de grond voor dat specifiek gewas. In een verdere uitwerking, maar hier niet geïmplementeerd, verloopt het aankopen van zaden ook via deze filter. 
+
+Om af te sluiten worden het aantal markers getoond op basis van het abonnementstype. Hoe duurder het abonnement, hoe meer toegang tot data (concept only). 
+
+<br>
 
 ---
 ## Bonuspunten
@@ -128,16 +129,16 @@ Het verslag van de via Userbrain afgenomen usertests, kan u via onderstaande lin
 ## Client
 ### Informatie
 
-Als u de repository mooi binnengehaald hebt via git clone, dan kunt u alle files geordend zien. In [assets](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/client/-/tree/master/src/assets) bevinden zich alle css-files, javascript-files en images. Als u onze [index.html](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/client/-/blob/master/src/index.html) in de browser opent, kan u de volledige client-side ervaren. Hiervoor raden wij u aan een resolutie van 1920x1080 te gebruiken. Aan de hand van requests die zich bevinden in de javascript-files, communiceert onze client met de server (Java). De code wordt gecontroleerd via [SonarLint](https://sonar.ti.howest.be/sonar/projects?search=14+mars). Dit is een tool die fouten/bugs zoekt in onze code. In de [package.json](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/client/-/blob/master/package.json) zitten alle scripts die de code valideren. Zo zijn we verplicht om kwaliteitsvolle code te schrijven.
+Als u de repository binnengehaald hebt via git clone, dan kunt u alle files geordend zien. In [assets](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/client/-/tree/master/src/assets) bevinden zich alle css-files, javascript-files en images. Als u onze [index.html](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/client/-/blob/master/src/index.html) in de browser opent, kan u de volledige client-side ervaren. Hiervoor raden wij u aan een resolutie van 1920x1080 te gebruiken. Aan de hand van requests die zich bevinden in de javascript-files, communiceert onze client met de server (Java). De code wordt gecontroleerd via [SonarLint](https://sonar.ti.howest.be/sonar/projects?search=14+mars). Dit is een tool die fouten/bugs zoekt in onze code. In de [package.json](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/client/-/blob/master/package.json) zitten alle scripts die de code valideren. Zo zijn we verplicht om kwaliteitsvolle code te schrijven.
 <br>
 
 ### Testaccount
 
-We hebben niet in een testaccount voorzien. Het registratieproces kan echter zeer vlot verlopen indien u gebruikt maakt van het automatisch invullen van uw gegevens. 
+We hebben geen testaccount voorzien. Het registratieproces kan echter vlot verlopen als u gebruikt maakt van het automatisch invullen van uw gegevens. 
 
-In tegenstelling tot de mogelijkheden die heden ten dage beschikbaar zijn, willen wij voorzien in een zo goed als volledig geautomatiseerd proces. 
+In tegenstelling tot de mogelijkheden die vandaag de dag beschikbaar zijn, willen wij voorzien in een zo goed als volledig geautomatiseerd proces. 
 
-Hierbij gebruiken we een combinatie van multifactor en behavioral authentication. Het invullen van paswoorden behoort dan tot het verre verleden (bv. 2020).
+Hierbij gebruiken we een combinatie van multifactor en behavioral authentication. Het invullen van paswoorden hoort dan tot het verre verleden (bv. 2020).
 
 ### Installatie
 
@@ -164,7 +165,7 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 
 ## Server
 ### Informatie
-Om de server op te zetten start je met het [Clonen](#installatie) van de server. Als de server succesvol gecloned is kan je deze [configureren](#configuratie) in de **conf/config.json**. Hier moet je een poort specifiëren waarop je de server wilt draaien. In deze configuratie file kan u ook de gegevens voor de database wijzigen. In de file: [MarsOpenApiBridge](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/webserver/MarsOpenApiBridge.java) worden alle requests afgehandeld die in de [OpenAPI File](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) omschreven zijn. Deze file staat in contact met de [MarsController](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/logic/controller/MarsController.java), in deze MarsController worden de repo's aangemaakt waarmee we zaken kunnen doen zoals gebruikers aanmaken, gewassen oplijsten, ...
+Om de server op te zetten start u met het [Clonen](#installatie) van de server. Als de server succesvol werd gecloned, kunt u deze [configureren](#configuratie) in de **conf/config.json**. Hier moet u een poort specifiëren waarop je de server wilt draaien. In deze configuratie file kan u ook de gegevens voor de database wijzigen. In de file: [MarsOpenApiBridge](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/webserver/MarsOpenApiBridge.java) worden alle requests afgehandeld die in de [OpenAPI File](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) omschreven zijn. Deze file staat in contact met de [MarsController](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/logic/controller/MarsController.java), in deze MarsController worden de repo's aangemaakt waarmee we zaken kunnen doen zoals gebruikers aanmaken, gewassen oplijsten, ...
 <br>
 
 ### Installatie
@@ -177,7 +178,6 @@ Of
 git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server.git
 
 ```
-
 
 ### Configuratie
 
@@ -228,29 +228,27 @@ Voor extra infomatie over gradle kan u terecht bij de [documentatie](https://doc
 De database is beschikbaar op localhost, op de hierboven ingestelde poort. bijvoorbeeld [localhost:9000](localhost:9000). De database wordt gestart bij het opstarten van de server. Zorg er dus voor dat uw server aanstaat als je de database wilt bereiken.
 <br>
 
-Bij het opstarten van de server zullen de tables uit de database verwijderd en daarna opnieuw aangemaakt worden. Dit gebeurd via het script [databaseStructure.sql](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/databaseStructure.sql)
+Bij het opstarten van de server zullen de tables uit de database verwijderd en daarna opnieuw aangemaakt worden. Dit gebeurt via het script [databaseStructure.sql](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/databaseStructure.sql)
 <br>
 
-In de database worden er test waarden voorzien bij het opstarten van de server. Deze kan u aanpassen in de file [populateDatabase.sql](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/populateDatabase.sql).
+
+In de database worden er testwaarden voorzien bij het opstarten van de server. Deze kan u aanpassen in de file [populateDatabase.sql](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/populateDatabase.sql).
 
 ---
 
 ## OpenAPI
 
-
-<!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
-
-</br>
+<br>
 
 Voor extra informatie over de werking van OpenAPI kan u altijd de [documentatie](https://swagger.io/specification/) raadplegen.
 
-</br>
+<br>
 
 
 De endpoints van onze server kan u terug vinden in onze
 [OpenAPI](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) file.
 
-Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind u hieronder.
+Er zijn ook enkele endpoints die nog niet uitgewerkt zijn. Deze vind u hieronder.
 
 * Inloggen
 * Gereedschappen uitlenen
