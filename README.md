@@ -56,7 +56,10 @@ ik mis een feature lijst van de POC (dat mag op de docs repo). Wat DOET jullie a
 
 ---
 ## Flowchart
-###
+### Flowchart van het afgeleverde project
+![Flowchart](img/end%20flowchart.png)
+
+### Flowchart zoals opgesteld bij aanvang project
 ![Flowchart](img/flowchart.png)
 <br><br>
 
