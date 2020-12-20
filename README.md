@@ -1,18 +1,6 @@
 # Mars Agriculture and Research Service (groep 14)
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
-#TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
-
-- Gekende bugs - client & server.
-  server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
-- links in onderdeel "information" werken niet.
-- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
-- Client: is er een bepaalde resolutie waarop we jullie project best bekijken? 1920x1080
-- Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
-- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
-- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
-- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer.
-
 
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14)
 
@@ -71,7 +59,8 @@ autonome samenleving te creëren op vlak van voedsel.
 >   - Interessante informatie over de producten die beschikbaar zijn op de map.
 >   - Een order history waarbij je op die manier ook kan nakijken hoeveel je al betaald hebt in totaal, of ook gemakkelijk iets opnieuw kan bestellen.
 
-<br><br>
+<br>
+
 ---
 ## Flowchart
 ### Flowchart van het afgeleverde project
@@ -93,8 +82,13 @@ __Wireframes via adobe XD:__
 ---
 ##Geïmplementeerde technische vereisten
 ###Map
+Het hoofdcomponent van onze app bestaat uit de interactieve Mars map. Deze werd geïmplementeerd o.b.v. google maps api. Aan de hand van een filter kunnen de gebruikers het gewenste gewas aanduiden waarna de markers zich aanpassen.
+
 ###Vue
+Aan de client side werd gebruik gemaakt van enkele vue componenten om herhalende code te vermijden. 
+
 ###CSS Animaties
+Als laatste vereiste werden enkele css animaties geïmplementeerd. 
 <br><br>
 
 ---
@@ -187,28 +181,18 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 
 ### Database
 
-<!-- [Aanmaken van de database](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/databaseStructure.sql)
-
-[Toevoegen van gegevens aan de database ](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/populateDatabase.sql) -->
-
 
 De database is beschikbaar op localhost, op de hierboven ingestelde poort. bijvoorbeeld [localhost:9000](localhost:9000). De database wordt gestart bij het opstarten van de server. Zorg er dus voor dat uw server aanstaat als je de database wilt bereiken.
-
-</br>
+<br>
 
 Bij het opstarten van de server zullen de tables uit de database verwijderd en daarna opnieuw aangemaakt worden. Dit gebeurd via het script [databaseStructure.sql](src/main/resources/databaseStructure.sql)
-
-</br>
+<br>
 
 In de database worden er test waarden voorzien bij het opstarten van de server. Deze kan u aanpassen in de file [populateDatabase.sql](src/main/resources/populateDatabase.sql).
-
-
 
 ---
 
 ## OpenAPI
-
-<!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
 
 De endpoints van onze server kan je terug vinden in onze
 [OpenAPI](src/main/resources/openapi-group-14.yaml) file.
@@ -216,27 +200,16 @@ De endpoints van onze server kan je terug vinden in onze
 Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind je hieronder.
 
 * Inloggen
-
 * Gereedschappen uitlenen
-
 * Gereedschappen toevoegen aan favorieten
-
 * Gereedschappen zoeken op naam
-
 * Bestelgeschiedenis opvragen van persoon
-
 * In bestelgeschiedenis zoeken op naam bij bepaald een persoon
-
 * zaadjes toevoegen aan favorieten
-
 * zaadjes verwijderen uit favorieten
-
 * zaadjes toevoegen aan winkelmandje
-
 * zaadjes verwijderen uit winkelmandje
-
-</br>
-
+<br>
 
 ## Gekende Bugs 
 
@@ -244,4 +217,4 @@ Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind je hieronder
 
 * Veiligheidsaspect, er zijn enkele kwetsbaarheden in de website. Aangezien er momenteel nog geen authenticatie aanwezig is, zorgt dit voor veiligheidsproblemen. Het is dus mogelijk om producten te verwijderen/toe te voegen in iemand anders zijn favorieten of winkelmandje.
 
-* Search info op de marketplace werkt niet optimaal als je meerdere gewassen geselecteerd hebt en daarna één deselecteerd.
+* Search info op de marketplace werkt niet optimaal als je meerdere gewassen geselecteerd hebt en daarna één deselecteert.
