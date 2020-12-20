@@ -1,18 +1,5 @@
 # Mars Agriculture and Research Service (groep 14)
-*door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
-
-
-# TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
-
-- Gekende bugs - client & server.
-  server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
-- links in onderdeel "information" werken niet.
-- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
-- Client: is er een bepaalde resolutie waarop we jullie project best bekijken? 1920x1080
-- Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
-- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
-- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
-- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer.
+*door Timo De Clercq, Annelin De Gols, Robin De Kinders, Laurens Giesen, Cédric Puystjens*
 
 
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14) [![License](https://img.shields.io/badge/License-OpenAPI%201.0-Green.svg)](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml)
@@ -269,3 +256,5 @@ Er zijn ook enkele endpoints die nog niet uitgewerkt zijn. Deze vind u hieronder
 * Veiligheidsaspect, er zijn enkele kwetsbaarheden in de website. Aangezien er momenteel nog geen authenticatie aanwezig is, zorgt dit voor veiligheidsproblemen. Het is dus mogelijk om producten te verwijderen/toe te voegen in iemand anders zijn favorieten of winkelmandje.
 
 * Search info op de marketplace werkt niet optimaal als je meerdere gewassen geselecteerd hebt en daarna één deselecteert.
+
+* Bij het toevoegen van een nieuw product, is het enkel mogelijk om een png foto te uploaden. Als je een foto met een andere extensie probeert te uploaden, zal de server er niet in slagen om deze in te laden.
