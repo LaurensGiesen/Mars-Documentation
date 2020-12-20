@@ -1,6 +1,19 @@
 # Mars Agriculture and Research Service (groep 14)
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
+#TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
+
+- Gekende bugs - client & server.
+  server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
+- links in onderdeel "information" werken niet.
+- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
+- Client: is er een bepaalde resolutie waarop we jullie project best bekijken? 1920x1080
+- Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
+- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
+- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
+- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer.
+
+
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14)
 
 ![Website Home Page](./img/Home.png)
@@ -42,7 +55,22 @@ autonome samenleving te creëren op vlak van voedsel.
 
 ---
 ##POC
-ik mis een feature lijst van de POC (dat mag op de docs repo). Wat DOET jullie applicatie? Zijn er delen niet in de POC maar wel in de wireframes?  
+
+###Onze POC bestaat uit:
+>   - Een map waarbij elke klant locaties kan zien, gebaseerd op het type abonnement, waarbij er bij elke locatie interessante informatie staat.
+>   - Een marketplace waar iedereen zijn producten op kan plaatsen en op deze manier een leuke interactie heeft met andere gebruikers van onze website. Bovendien kunnen ze hier ook wat winst op maken en er een centje mee bijverdienen.
+>     <br>
+>     In de marketplace kan je zowel favoriete producten toevoegen en verwijderen om later heel snel dezelfde producten te kunnen kopen, als producten toevoegen en verwijderen uit een winkelmandje met een gegeven aantal om deze dan effectief te kunnen kopen.
+>   - Een onderdeel van het profiel is ook dat je kan zien welke producten je allemaal hebt toegevoegd aan de marketplace. Op deze pagina is er de functionaliteit om ze te verwijderen indien je ze toch niet wil verkopen.
+>   - Een change subscription pagina. Het aanpassen van je subscription is iets wat ook heel belangrijk is op onze website. De subscription is de basis van wat er mogelijk is op de website. Met een premium subscription heb je namelijk veel meer voordelen dan een free subscription.
+>     <br>
+>     De data van de user zelf en de huidige subscription kan ook steeds bekeken en aangepast worden.
+
+###Delen die we niet hebben kunnen implementeren:
+>   - Shared Tools waarbij mensen materiaal kunnen uitlenenen die wij als bedrijf voorzien.
+>   - Interessante informatie over de producten die beschikbaar zijn op de map.
+>   - Een order history waarbij je op die manier ook kan nakijken hoeveel je al betaald hebt in totaal, of ook gemakkelijk iets opnieuw kan bestellen.
+
 <br><br>
 ---
 ## Flowchart
