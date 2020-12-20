@@ -1,7 +1,23 @@
 # Mars Agriculture and Research Service (groep 14)
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
-[![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14)
+
+# TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
+
+- Gekende bugs - client & server.
+  server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
+- links in onderdeel "information" werken niet.
+- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
+- Client: is er een bepaalde resolutie waarop we jullie project best bekijken? 1920x1080
+- Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
+- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
+- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
+- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer.
+
+
+[![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14) [![License](https://img.shields.io/badge/License-OpenAPI%201.0-Green.svg)](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml)
+
+
 
 ![Website Home Page](./img/Home.png)
 <br></br>
@@ -27,6 +43,7 @@
   + [Informatie](#informatie)
   + [Installatie](#installatie)
   + [Configuratie](#configuratie)
+  + [Gradle](#gradle)
   + [Database](#database)
 * [OpenAPI]((#openAPI))
 * [Gekende bugs](#gekende-bugs)
@@ -182,16 +199,40 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 
 ```
 
+### Gradle 
+
+De server is een java gradle project. Gradle is een opensource-automatiseringstool die is ontworpen om flexibel genoeg te zijn om bijna elk type software te bouwen.
+ 
+<br>
+
+Gradle builden:
+
+```bash
+gradle build
+```
+
+
+Gradle runnen:
+
+```bash
+gradle run
+```
+
+Voor extra infomatie over gradle kan u terecht bij de [documentatie](https://docs.gradle.org/current/userguide/userguide.html)
+
+<br>
+
 ### Database
 
 
 De database is beschikbaar op localhost, op de hierboven ingestelde poort. bijvoorbeeld [localhost:9000](localhost:9000). De database wordt gestart bij het opstarten van de server. Zorg er dus voor dat uw server aanstaat als je de database wilt bereiken.
 <br>
 
-Bij het opstarten van de server zullen de tables uit de database verwijderd en daarna opnieuw aangemaakt worden. Dit gebeurd via het script [databaseStructure.sql](src/main/resources/databaseStructure.sql)
+Bij het opstarten van de server zullen de tables uit de database verwijderd en daarna opnieuw aangemaakt worden. Dit gebeurt via het script [databaseStructure.sql](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/databaseStructure.sql)
 <br>
 
-In de database worden er testwaarden voorzien bij het opstarten van de server. Deze kunt u aanpassen in de file [populateDatabase.sql](src/main/resources/populateDatabase.sql).
+
+In de database worden er testwaarden voorzien bij het opstarten van de server. Deze kan u aanpassen in de file [populateDatabase.sql](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/populateDatabase.sql).
 
 ---
 
@@ -205,7 +246,7 @@ Voor extra informatie over de werking van OpenAPI kan u altijd de [documentatie]
 
 
 De endpoints van onze server kan u terug vinden in onze
-[OpenAPI](src/main/resources/openapi-group-14.yaml) file.
+[OpenAPI](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) file.
 
 Er zijn ook enkele endpoints die nog niet uitgewerkt zijn. Deze vind u hieronder.
 
