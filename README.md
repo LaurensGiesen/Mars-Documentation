@@ -2,13 +2,26 @@
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
 
+# TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
+
+- Gekende bugs - client & server.
+  server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
+- links in onderdeel "information" werken niet.
+- Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
+- Client: is er een bepaalde resolutie waarop we jullie project best bekijken? 1920x1080
+- Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
+- server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
+- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
+- readme informatie op client en server repo's is obsolete: ga daar nog eens grondig door want je verwijst ernaar om dit te gebruiken voor installatie maar kloppen dus niet meer.
+
+
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14)
 
 ![Website Home Page](./img/Home.png)
 <br></br>
 
 ---
-##Inhoudstafel
+## Inhoudstafel
 
 * [Beschrijving](#beschrijving)
 * [POC](#poc)
@@ -42,9 +55,9 @@ autonome samenleving te creëren op vlak van voedsel.
 <br><br>
 
 ---
-##POC
+## POC
 
-###Onze POC bestaat uit:
+### Onze POC bestaat uit:
 >   - Een map waarbij elke klant locaties kan zien, gebaseerd op het type abonnement, waarbij er bij elke locatie interessante informatie staat.
 >   - Een marketplace waar iedereen zijn producten op kan plaatsen en op deze manier een leuke interactie heeft met andere gebruikers van onze website. Bovendien kunnen ze hier ook wat winst op maken en er een centje mee bijverdienen.
 >     <br>
@@ -54,7 +67,7 @@ autonome samenleving te creëren op vlak van voedsel.
 >     <br>
 >     De data van de user zelf en de huidige subscription kan ook steeds bekeken en aangepast worden.
 
-###Delen die we niet hebben kunnen implementeren:
+### Delen die we niet hebben kunnen implementeren:
 >   - Shared Tools waarbij mensen materiaal kunnen uitlenenen die wij als bedrijf voorzien.
 >   - Interessante informatie over de producten die beschikbaar zijn op de map.
 >   - Een order history waarbij je op die manier ook kan nakijken hoeveel je al betaald hebt in totaal, of ook gemakkelijk iets opnieuw kan bestellen.
@@ -62,6 +75,7 @@ autonome samenleving te creëren op vlak van voedsel.
 <br>
 
 ---
+
 ## Flowchart
 ### Flowchart van het afgeleverde project
 ![Flowchart](img/end%20flowchart.png)
@@ -80,20 +94,25 @@ __Wireframes via adobe XD:__
 <br><br>
 
 ---
-##Geïmplementeerde technische vereisten
-###Map
+
+## Uitzonderlijke features
+Uitzonderlijke feature(s) die jullie onderscheiden van de anderen / waar jullie trots op zijn
+
+## Geïmplementeerde technische vereisten
+### Map
 Het hoofdcomponent van onze app bestaat uit de interactieve Mars map. Deze werd geïmplementeerd o.b.v. google maps api. Aan de hand van een filter kunnen de gebruikers het gewenste gewas aanduiden waarna de markers zich aanpassen.
 
-###Vue
+### Vue
 Aan de client side werd gebruik gemaakt van enkele vue componenten om herhalende code te vermijden. 
 
-###CSS Animaties
+### CSS Animaties
 Als laatste vereiste werden enkele css animaties geïmplementeerd. 
 <br><br>
 
 ---
 ##Uitzonderlijke features
 De map is een uitzonderlijke feature omdat we gebruik maken van een Google API. Vervolgens kunnen we zowel zoeken als filteren op deze data. Onze map maakt ook gebruik van marker clustering. Dit wil zeggen dat als markers overlappen dat ze samen worden gemengd in 1 marker. Elke marker is ook voorzien van een pop-up die meer informatie toont zoals de locatie, het type gewas en ratio. Hoe hoger de ratio, hoe beter de grond voor dat specifiek gewas. Om af te sluiten worden het aantal markers getoond op basis van het abonnementstype. Hoe duurder het abonnement, hoe meer toegang tot data. 
+
 <br><br>
 
 ---
@@ -147,6 +166,7 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 ### Informatie
 Om de server op te zetten start je met het [Clonen](#installatie) van de server. Als de server succesvol gecloned is kan je deze [configureren](#configuratie) in de **conf/config.json**. Hier moet je een poort specifiëren waarop je de server wilt draaien. In deze configuratie file kan u ook de gegevens voor de database wijzigen. In de file: [MarsOpenApiBridge](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/webserver/MarsOpenApiBridge.java) worden alle requests afgehandeld die in de [OpenAPI File](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) omschreven zijn. Deze file staat in contact met de [MarsController](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/logic/controller/MarsController.java), in deze MarsController worden de repo's aangemaakt waarmee we zaken kunnen doen zoals gebruikers aanmaken, gewassen oplijsten, ...
 <br>
+
 ### Installatie
 ```
 git clone git@git.ti.howest.be:TI/2020-2021/s3/project-ii/projects/groep-14/server.git
@@ -194,10 +214,20 @@ In de database worden er test waarden voorzien bij het opstarten van de server. 
 
 ## OpenAPI
 
-De endpoints van onze server kan je terug vinden in onze
+
+<!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
+
+</br>
+
+Voor extra informatie over de werking van OpenAPI kan u altijd de [documentatie](https://swagger.io/specification/) raadplegen.
+
+</br>
+
+
+De endpoints van onze server kan u terug vinden in onze
 [OpenAPI](src/main/resources/openapi-group-14.yaml) file.
 
-Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind je hieronder.
+Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind u hieronder.
 
 * Inloggen
 * Gereedschappen uitlenen
