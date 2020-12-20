@@ -1,17 +1,6 @@
 # Mars Agriculture and Research Service (groep 14)
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
-#TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
-
-- server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
-- server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI. ==> Timo is er mee bezig.
-- POC (Robin is er mee bezig)
-- Uitleg over geïmplementeerde technische vereisten
-- Uitzonderlijke features (waar we trots op zijn uitschrijven)
-- Database: uitleg installatie (of gebrek daaraan)
-- OpenAPI moet daar iets van tekst bij?
-
-
 [![License](https://img.shields.io/badge/License-SonarlintClient%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-client-14) [![License](https://img.shields.io/badge/License-SonarlintServer%201.0-Green.svg)](https://sonar.ti.howest.be/sonar/dashboard?id=2020.project-ii%3Amars-server-14)
 
 ![Website Home Page](./img/Home.png)
