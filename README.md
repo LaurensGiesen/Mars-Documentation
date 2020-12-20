@@ -168,3 +168,12 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 ## OpenAPI
 
 [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml)
+
+
+## Gekende Bugs 
+
+* Als er een product wordt verwijderd van de marketplace en dit product is aanwezig in iemand zijn/haar favorieten of winkelmandje, Dan zal het winkelmandje/ lijst met favorieten van die persoon niet meer werken (producten toevoegen, verwijderen, weergeven zal niet meer werken).
+
+* Veiligheidsaspect, er zijn enkele kwetsbaarheden in de website. Aangezien er momenteel nog geen authenticatie aanwezig is, zorgt dit voor veiligheidsproblemen. Het is dus mogelijk om producten te verwijderen/toe te voegen in iemand anders zijn favorieten of winkelmandje.
+
+* Search info op de marketplace werkt niet optimaal als je meerdere gewassen geselecteerd hebt en daarna één deselecteerd.
