@@ -7,7 +7,7 @@
   server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
 - links in onderdeel "information" werken niet.
 - Client: wat is de default user flow? Er staat wel een flowchart, maar highlight daar dan default user flow op.
-- Client: is er een bepaalde resolutie waarop we jullie project best bekijken?
+- Client: is er een bepaalde resolutie waarop we jullie project best bekijken? 1920 1080
 - Client: is er een test account beschikbaar met bepaalde credentials waarmee ik direct aan de slag kan?
 - server: is er geen database aanwezig in jullie project? Lijkt me sterk gezien dir een requirement is. In de readme zeker: link naar population script + how to install it, beschrijving van de tabellen.
 - server: zijn er endpoints die jullie nog niet hebben uitgewerkt? Dan dienen die opgelijst te worden + link naar documentatie openAPI.
@@ -56,6 +56,7 @@ ik mis een feature lijst van de POC (dat mag op de docs repo). Wat DOET jullie a
 
 ---
 ## Flowchart
+###
 ![Flowchart](img/flowchart.png)
 <br><br>
 
