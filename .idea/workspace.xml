@@ -25,7 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6778021c-cb4c-426a-8e08-24aedaff1de8" name="Default Changelist" comment="commit workspace.xml">
+    <list default="true" id="6778021c-cb4c-426a-8e08-24aedaff1de8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608481695246</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="dubbele uitzonderlijke features verwijderd">
+      <created>1608491186818</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608491186818</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,13 +203,8 @@
     <MESSAGE value="insert flowchart" />
     <MESSAGE value="update" />
     <MESSAGE value="commit workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit workspace.xml" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1608481697494">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.209.1920.1040@0.0.2560.1400" timestamp="1608481697494" />
+    <MESSAGE value="dubbele uitzonderlijke features verwijderd" />
+    <option name="LAST_COMMIT_MESSAGE" value="dubbele uitzonderlijke features verwijderd" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
