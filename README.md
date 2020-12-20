@@ -1,7 +1,7 @@
 # Mars Agriculture and Research Service (groep 14)
 *door Timo De Clercq, Annelin De Gols, Robin De Kinders Laurens Giesen, Cedric Puystjens*
 
-#TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
+# TODOS VOOR WE INDIENEN - NIET VERGETEN TE VERWIJDEREN
 
 - Gekende bugs - client & server.
   server: Gekende bugs voor readme.md --> server crash bij het verwijderen van een product als deze in de basket/ fav zit
@@ -20,7 +20,7 @@
 <br></br>
 
 ---
-##Inhoudstafel
+## Inhoudstafel
 
 * [Beschrijving](#beschrijving)
 * [POC](#poc)
@@ -54,9 +54,9 @@ autonome samenleving te creëren op vlak van voedsel.
 <br><br>
 
 ---
-##POC
+## POC
 
-###Onze POC bestaat uit:
+### Onze POC bestaat uit:
 >   - Een map waarbij elke klant locaties kan zien, gebaseerd op het type abonnement, waarbij er bij elke locatie interessante informatie staat.
 >   - Een marketplace waar iedereen zijn producten op kan plaatsen en op deze manier een leuke interactie heeft met andere gebruikers van onze website. Bovendien kunnen ze hier ook wat winst op maken en er een centje mee bijverdienen.
 >     <br>
@@ -66,13 +66,14 @@ autonome samenleving te creëren op vlak van voedsel.
 >     <br>
 >     De data van de user zelf en de huidige subscription kan ook steeds bekeken en aangepast worden.
 
-###Delen die we niet hebben kunnen implementeren:
+### Delen die we niet hebben kunnen implementeren:
 >   - Shared Tools waarbij mensen materiaal kunnen uitlenenen die wij als bedrijf voorzien.
 >   - Interessante informatie over de producten die beschikbaar zijn op de map.
 >   - Een order history waarbij je op die manier ook kan nakijken hoeveel je al betaald hebt in totaal, of ook gemakkelijk iets opnieuw kan bestellen.
 
 <br><br>
 ---
+
 ## Flowchart
 ### Flowchart van het afgeleverde project
 ![Flowchart](img/end%20flowchart.png)
@@ -91,14 +92,16 @@ __Wireframes via adobe XD:__
 <br><br>
 
 ---
-##Geïmplementeerde technische vereisten
-###Map
-###Vue
-###CSS Animaties
+
+## Geïmplementeerde technische vereisten
+### Map
+### Vue
+### CSS Animaties
 <br><br>
 
 ---
-##Uitzonderlijke features
+
+## Uitzonderlijke features
 Uitzonderlijke feature(s) die jullie onderscheiden van de anderen / waar jullie trots op zijn
 <br><br>
 
@@ -153,6 +156,7 @@ git clone https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/
 ### Informatie
 Om de server op te zetten start je met het [Clonen](#installatie) van de server. Als de server succesvol gecloned is kan je deze [configureren](#configuratie) in de **conf/config.json**. Hier moet je een poort specifiëren waarop je de server wilt draaien. In deze configuratie file kan u ook de gegevens voor de database wijzigen. In de file: [MarsOpenApiBridge](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/webserver/MarsOpenApiBridge.java) worden alle requests afgehandeld die in de [OpenAPI File](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) omschreven zijn. Deze file staat in contact met de [MarsController](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/java/be/howest/ti/mars/logic/controller/MarsController.java), in deze MarsController worden de repo's aangemaakt waarmee we zaken kunnen doen zoals gebruikers aanmaken, gewassen oplijsten, ...
 <br>
+
 ### Installatie
 ```
 git clone git@git.ti.howest.be:TI/2020-2021/s3/project-ii/projects/groep-14/server.git
@@ -210,10 +214,17 @@ In de database worden er test waarden voorzien bij het opstarten van de server. 
 
 <!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
 
-De endpoints van onze server kan je terug vinden in onze
+</br>
+
+Voor extra informatie over de werking van OpenAPI kan u altijd de [documentatie](https://swagger.io/specification/) raadplegen.
+
+</br>
+
+
+De endpoints van onze server kan u terug vinden in onze
 [OpenAPI](src/main/resources/openapi-group-14.yaml) file.
 
-Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind je hieronder.
+Er zijn ook enkele endpoints die nog niet uitgewerk zijn. Deze vind u hieronder.
 
 * Inloggen
 
