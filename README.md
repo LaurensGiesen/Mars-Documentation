@@ -197,9 +197,6 @@ In de database worden er testwaarden voorzien bij het opstarten van de server. D
 
 ## OpenAPI
 
-
-<!-- [Link](https://git.ti.howest.be/TI/2020-2021/s3/project-ii/projects/groep-14/server/-/blob/master/src/main/resources/openapi-group-14.yaml) -->
-
 <br>
 
 Voor extra informatie over de werking van OpenAPI kan u altijd de [documentatie](https://swagger.io/specification/) raadplegen.
